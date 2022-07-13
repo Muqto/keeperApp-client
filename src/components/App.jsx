@@ -3,7 +3,7 @@ import Header from "./Header";
 import Footer from "./Footer";
 import Note from "./Note";
 import CreateArea from "./CreateArea";
-const API_BASE = "https://mern-noted-app.herokuapp.com/"
+const API_BASE = "https://mern-noted-app.herokuapp.com"
 function App() {
   const [note, setNote] = useState([]);
 ////////////////////////////////////////////////Connecting to backend////////////////////////////////////////////////////////////  
