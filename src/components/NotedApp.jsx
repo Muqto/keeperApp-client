@@ -11,10 +11,6 @@ function NotedApp() {
   const navigate = useNavigate();
   const {userInfo, setUserInfo, userID, setUserID} = useContext(userContext);
   const [note, setNote] = useState([]);
-  const [didMount, setDidMount] = useState(false)
-
-// Setting didMount to true upon mounting
-useEffect(() => { setDidMount(true) }, [])
   
 ////////////////////////////////////////////////Connecting to backend////////////////////////////////////////////////////////////  
 
@@ -24,7 +20,6 @@ useEffect(() => { setDidMount(true) }, [])
       .then((res) => res.json())
       .then((data) => {setNote(data)})
       .catch((err) => console.error("Error: ", err))
-      console.log(didMount, prevUserID)
         if(!prevUserID){
           navigate("/")
         }
