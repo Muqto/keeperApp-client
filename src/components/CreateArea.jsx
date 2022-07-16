@@ -15,6 +15,7 @@ function CreateArea(props) {
   return (
     <div>
       <form
+        className = "note-text-form"
         onSubmit={(e) => {
           e.preventDefault();
           
@@ -29,7 +30,7 @@ function CreateArea(props) {
           }
         }}
       >
-        {valid ? null : <p>Please enter a valid note.</p>}
+        {valid ? null : <p style={{color:"red"}}>Please enter a valid note.</p>}
         <input
           name="title"
           placeholder="Title"

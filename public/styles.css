@@ -12,6 +12,9 @@ body {
 }
 
 header {
+  display: flex;
+  align-items: center;
+
   background-color: #000000;
   margin: auto -16px;
   padding: 16px 32px;
@@ -68,7 +71,7 @@ footer p {
   outline: none;
 }
 
-form {
+.note-text-form {
   position: relative;
   width: 480px;
   margin: 30px auto 20px auto;
@@ -77,8 +80,8 @@ form {
   border-radius: 7px;
   box-shadow: 0 1px 5px rgb(138, 137, 137);
 }
-form input,
-form textarea {
+.note-text-form input,
+.note-text-form textarea {
   width: 100%;
   border: none;
   padding: 4px;
@@ -87,7 +90,7 @@ form textarea {
   font-family: inherit;
   resize: none;
 }
-form button {
+.note-text-form button {
   position: absolute;
   right: 18px;
   bottom: -18px;
@@ -101,3 +104,83 @@ form button {
   cursor: pointer;
   outline: none;
 }
+.register{
+  height: 100vh;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.register-form{
+  margin-top: -7%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  
+}
+.login-register-header{
+  position: absolute;
+  top: 20%;
+  font-size: 2rem;
+}
+.register-form input
+{
+    font-size:25px;
+    text-indent: 10px;
+    width: 80%;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    border-width: 1px;
+}
+.register-form input:focus{
+  outline: 1px;
+  border-color: rgb(199, 199, 255);
+}
+.register-form button{
+    font-size: 1.2rem;
+    padding: 5px 15px 5px 15px;
+    border-radius: 12px;
+    border-width: 0px;
+    background-color: rgb(0, 0, 0);
+    color: #eee;
+    transition: all 0.1s ease-in-out;
+   
+}
+.register-form button:hover{
+  cursor: pointer;
+  background-color: #9b9b9b;
+  box-shadow: 1px 1px 2px rgb(128, 128, 128) ;
+  color: #000000;
+}
+.login-link{
+  margin-top: 10px;
+  font-size: 1.1rem;
+  text-decoration: none;
+  font-weight: 400;
+  color: black;
+  transition: all 0.1s ease-in-out;
+}
+.login-link:hover{
+  cursor: pointer;
+  color: #9b9b9b;
+}
+
+.welcome{
+  text-align: center;
+  margin-top: 1%;
+}
+
+.logout{
+  position: absolute;
+  right: 5%;
+  text-decoration: none;
+  z-index: 10;
+  color: white;
+  transition: all 0.1s ease-in-out;
+}
+.logout:hover{
+  color: #9b9b9b;
+}
+
