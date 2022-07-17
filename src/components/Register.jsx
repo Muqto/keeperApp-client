@@ -21,6 +21,7 @@ export default function Register() {
         
         <div className='login-register-header'>
             <h1>Register</h1>
+            <p className='heads-up'>(might take a few seconds to register/login)</p>
             {isValid ? null : <h4 style ={{color: "red"}}>Please choose a valid username and password</h4>}
             {isError ? <h4 style ={{color: "red"}}>Username already taken</h4> : null}
         </div>

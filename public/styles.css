@@ -183,4 +183,7 @@ footer p {
 .logout:hover{
   color: #9b9b9b;
 }
-
+.heads-up{
+  padding: 10px;
+  font-size: 1rem;
+}
