@@ -16,7 +16,7 @@ export default function Login() {
     <div className='register'>
     
     <div className='login-register-header'>
-      <h1>Login Page</h1>
+      <h1>Login</h1>
       {isError ? <h4 className='error-msg' style={{color: "red"}}>username or password invalid</h4> : null}
     </div>
     

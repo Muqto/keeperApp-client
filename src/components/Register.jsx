@@ -20,7 +20,7 @@ export default function Register() {
     <div className='register'>
         
         <div className='login-register-header'>
-            <h1>Register Page</h1>
+            <h1>Register</h1>
             {isValid ? null : <h4 style ={{color: "red"}}>Please choose a valid username and password</h4>}
             {isError ? <h4 style ={{color: "red"}}>Username already taken</h4> : null}
         </div>
